@@ -1,5 +1,3 @@
-from collections import UserString
-
 import pytest
 from data.generators import generate_create_user_data
 from methods.user_methods import UserMethods
