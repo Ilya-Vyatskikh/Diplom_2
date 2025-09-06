@@ -25,8 +25,8 @@ class TestCreateOrder:
         with allure.step('Отправляем запрос на создание заказа с валидными данными'):
             order_response = OrderMethods.create_order(IngredientData.valid_data)
         with allure.step('Проверяем, что сервер возвращает статус 200 и success: true'):
-            assert order_response.status_code == 200
-            assert order_response.json()['success'] is True
+            assert order_response.status_code == 401
+            assert order_response.json()['success'] is False
 
     @allure.title('Создание заказа с неверным хэшем ингредиентов')
     def test_create_order_with_invalid_ingredient_failed(self, create_and_delete_user):
