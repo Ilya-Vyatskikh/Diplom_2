@@ -21,10 +21,10 @@ class TestCreateOrder:
             assert order_response.json()['success'] is True
 
     @allure.title('Создание заказа неавторизованным пользователем')
-    def test_create_order_unauth_user_success(self):
+    def test_create_order_unauth_user_failed(self):
         with allure.step('Отправляем запрос на создание заказа с валидными данными'):
             order_response = OrderMethods.create_order(IngredientData.valid_data)
-        with allure.step('Проверяем, что сервер возвращает статус 200 и success: true'):
+        with allure.step('Проверяем, что сервер возвращает статус 401 и success: false'):
             assert order_response.status_code == 401
             assert order_response.json()['success'] is False
 
