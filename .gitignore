@@ -1,0 +1,73 @@
+# Virtual Environment
+venv/
+env/
+.venv/
+ENV/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.coverage
+htmlcov/
+.tox/
+.nox/
+.coverage.*
+.cache
+.pytest_cache/
+pytest_debug.log
+
+# PyCharm
+.idea/
+*.ipr
+*.iml
+*.iws
+
+# VS Code
+.vscode/
+*.swp
+*.swo
+*.swn
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment variables
+.env
+.env.local
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
